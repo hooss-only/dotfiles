@@ -8,5 +8,9 @@ cp ~/.config/hypr ./.config/ -r
 cp ~/.config/neofetch ./.config/ -r
 cp ~/.config/nvim ./.config/ -r
 
+# tmux
+cp ~/.tmux ./ -r
+cp ~/.tmux.conf ./
+
 #.zshrc
 cp ~/.zshrc ./
