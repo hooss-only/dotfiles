@@ -1,5 +1,6 @@
 #!/bin/bash
-# waybar, kitty, wlogout, rofi, hypr, neofetch, nvim
+# waybar, kitty, wlogout, rofi, hypr, neofetch, nvim, swaylock
+cp ~/.config/swaylock ./.config/ -r
 cp ~/.config/kitty ./.config/ -r
 cp ~/.config/rofi ./.config/ -r
 cp ~/.config/wlogout ./.config/ -r
