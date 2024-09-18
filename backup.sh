@@ -14,3 +14,6 @@ cp ~/.tmux.conf ./
 
 #.zshrc
 cp ~/.zshrc ./
+
+# wallpaper
+cp ~/pictures/wallpapers ./pictures/ -r
