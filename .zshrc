@@ -7,8 +7,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# to know which specific one was loaded, run: echo $RANDOM_THEME See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="dst"
 
 # Set list of themes to pick from when loading at random
@@ -56,8 +55,7 @@ ZSH_THEME="dst"
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
+# stamp shown in the history command output. You can set one of the optional three formats:
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
@@ -115,6 +113,7 @@ export QT_IM_MODULE=ibus
 alias vim="nvim"
 alias vi="nvim"
 alias ls='ls --color=auto -h --group-directories-first'
+alias discord='discord -enable-wayland-ime --ozone-platform=wayland'
 
 # bun completions
 [ -s "/home/hooss/.bun/_bun" ] && source "/home/hooss/.bun/_bun"
@@ -126,9 +125,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export EDITOR='nvim'
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ] && [ -z "${TMUX}" ]; then
-    exec tmux new-session -A -s ${USER} >/dev/null 2>&1
-fi
 
 /home/hooss/documents/developments/c/cli-startup/build/cli-startup
