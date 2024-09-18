@@ -7,6 +7,7 @@ cp ~/.config/wlogout ./.config/ -r
 cp ~/.config/hypr ./.config/ -r
 cp ~/.config/neofetch ./.config/ -r
 cp ~/.config/nvim ./.config/ -r
+cp ~/.config/waybar ./.config/ -r
 
 # tmux
 cp ~/.tmux ./ -r
