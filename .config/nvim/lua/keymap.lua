@@ -1,5 +1,5 @@
 -- opening file with fzf
-vim.keymap.set('n', '<c-k>', ':Files<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<c-p>', ':Files<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<c-g>', ':Rg<CR>', { noremap = true, silent = true })
 
 -- new tab and move (neovim natvie featrue)
@@ -27,3 +27,12 @@ vim.keymap.set('i', '<c-h>', '<left>', { noremap = true, silent = true })
 vim.keymap.set('i', '<c-j>', '<down>', { noremap = true, silent = true })
 vim.keymap.set('i', '<c-k>', '<up>', { noremap = true, silent = true })
 vim.keymap.set('i', '<c-l>', '<right>', { noremap = true, silent = true })
+
+-- normal mode c-hjkl -> vim tmux navigator
+vim.g.tmux_navigator_no_mappings = 1
+vim.keymap.set('n', '<c-h>', ':TmuxNavigateLeft<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<c-j>', ':TmuxNavigateDown<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<c-k>', ':TmuxNavigateUp<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<c-l>', ':TmuxNavigateRight<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<c-\\>', ':TmuxNavigatePrevious<CR>', { noremap = true, silent = true })
+

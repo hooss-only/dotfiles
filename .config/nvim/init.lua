@@ -5,9 +5,7 @@ vim.opt.termguicolors = true
 
 vim.cmd('colorscheme gruvbox')
 vim.cmd('syntax on')
-
-vim.opt.number = true
-vim.opt.encoding = 'utf-8'
+vim.opt.number = true vim.opt.encoding = 'utf-8'
 vim.opt.ruler = true
 
 -- code style things
@@ -34,9 +32,9 @@ require('lualine').setup {
   },
 }
 
+-- nvim-tree-sitter
 require('nvim-treesitter.configs').setup {
 	highlight = {
     enable = true,
 	},
 }
-
